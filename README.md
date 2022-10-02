@@ -1,7 +1,6 @@
-# WebRTC-Powered-Voice-chat
+# reactjs-nodejs-socket-webrtc_simple-voice-chat
 
-Coded in a weekend using NodeJS server and peerJS to leverage WebRTC features to have a low latency voice call web app. Since WebRTC uses UDP, the latency is quite low. However, in weak network areas the latency is still high.
-
-# Future work in progress
-
-Voice stream compression to minimize the latency. Different techniques can be employed however, the current one requires voice-stream to be in browser supported format.
+#
+1. reactjs nodejs(express) socket.io peer을 통한 오디오 챗
+#
+2. 본 프로젝트는 오디오만 목적으로 만들었지만 원하면 화상채팅도 가능. App.js참고

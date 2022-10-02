@@ -1,17 +1,15 @@
 {
-  "name": "chatapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "peerjs": "^1.3.1",
-    "socket.io": "^3.0.4"
-  }
+    "name": "rtc_chat",
+    "main": "app.js",
+    "version": "1.0.0",
+    "scripts": {
+        "start" : "nodemon app.js"
+    },
+    "dependencies": {
+        "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.7",
+        "socket.io": "^4.0.1"
+    }
 }
