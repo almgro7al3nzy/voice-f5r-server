@@ -1,0 +1,28 @@
+.userHead {
+  background: pink;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.userAvatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.goBack {
+  display: flex;
+  align-items: center;
+  background: none;
+  outline: none;
+  margin-top: 2rem;
+}
+
+.goBack span{
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  margin-left: 1rem;
+  
+}

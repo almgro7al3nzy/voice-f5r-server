@@ -1,28 +1,70 @@
-<h1>Voice chat with socket.io</h1>
+# Getting Started with Create React App
 
-<h2>RESTful API</h2>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<p>This project is to practice the concepts of websockets with Node.js and the package socket.io.</p>
+## Available Scripts
 
+In the project directory, you can run:
 
-## Installing and Running
+### `npm start`
 
-1. Make sure that you have `node` and `npm` installed on your computer.
-2. Fork and clone this repo on your computer.
-3. `cd` into the root directory and run ` npm install`.
-4. Run `npm start` and point your browser to `localhost:3000`.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-<h2>The Final Product! </h2>
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-This aplication can run in a localhost or local lan changing the address on public/chat.js
-<br>
-<h1>Tips</h1>
-<h2>Restarting the server</h2>
+### `npm test`
 
-<br>
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<p>When you make changes to any JavaScript files, you have to restart the server. Just press `ctrl + c` in the terminal to stop the server and `npm start` or `node ./bin/www` to start it up again. This process can get very tedious, so I highly recommend that you install Nodemon. This package will automatically restart your server every time you make changes to your JS files. All you have to do is run `sudo npm install -g nodemon` to install the package globally and then run `nodemon index.js`. The package takes care of the rest!</p>
+### `npm run build`
 
-<br>
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-<p>This repository was based on https://github.com/iamshaunjp/websockets-playlist <p>
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
