@@ -1,0 +1,27 @@
+{
+  "Chat": {
+    "-N9GK3lfFhewsskBgGD6": {
+      "message": "Test Join Room",
+      "roomId": "id01",
+      "uid": "xyxz"
+    },
+    "-N9GK6i-xX--u-GZn9_L": {
+      "message": "Test Join Room",
+      "roomId": "id01",
+      "uid": "xyxz"
+    }
+  },
+  "Room": {
+    "-N9GM4rcRwlHtvmpLzl1": {
+      "roomId": "id01",
+      "secCode":""
+    }
+  },
+  "User": {
+    "-N9GNg5af-Y0JmdS8CWz": {
+      "name": "Nguyen Van A",
+      "language":"",
+      "uid": "xyxz"
+    }
+  }
+}
