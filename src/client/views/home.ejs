@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/globals.css" />
+    <link rel="stylesheet" href="/public/css/home.css" />
+  </head>
+  <body
+    style="margin: 0px; font-family: 'Mulish', sans-serif; overflow: hidden"
+  >
+    <div class="container">
+      <img src="/public/images/chatting-app.png" alt="" />
+      <div id="create" class="box" onclick="create()">
+        <h3>Create a new Call</h3>
+      </div>
+      <div id="join" class="box" onclick="join()">
+        <h3>Join a Call</h3>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function create() {
+      location.href = "/chat/room";
+    }
+
+    function join() {
+      var item = prompt("Insira o codigo da sala");
+      if (item == null || item == "") {
+        alert("O seu pedido foi cancelado!");
+      } else {
+        location.href = "/chat/" + item;
+      }
+    }
+  </script>
+</html>

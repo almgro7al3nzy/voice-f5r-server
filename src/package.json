@@ -1,24 +1,30 @@
 {
-  "name": "backend",
+  "name": "chatapp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "chatapp",
+  "main": "/server/index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server/index.js ",
+    "run": ""
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoJardim/chatapp.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoJardim/chatapp/issues"
+  },
+  "homepage": "https://github.com/RicardoJardim/chatapp#readme",
   "dependencies": {
-    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "jimp": "^0.16.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.3.1",
-    "twilio": "^3.76.1"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13",
+    "path": "^0.12.7",
+    "socket.io": "^4.2.0",
+    "uuid": "^8.3.2"
   }
 }
