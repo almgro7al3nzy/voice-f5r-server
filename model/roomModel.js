@@ -5,8 +5,8 @@ const { Schema } = mongoose;
 
 const roomSchema = new Schema({
     users: [{
-        username: { type: String, required: true },
-        userID: { type: String, required: true }
+        username: { type: String, required: true }
+
     }],
     voiceUsers: [{
         username: { type: String, required: true },

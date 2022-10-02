@@ -51,9 +51,9 @@ io.on("connection", (socket) => {
         async function handleDisc() {
             let room = await Room.findOne({ "users.userID": socket.id });
             if (room) {
-                let updatedRm = await Room.findOneAndUpdate({ _id: room._id }, { $pull: { users: { userID: socket.id }, voiceUsers: { userID: socket.id } } }, { new: true });
+                let updatedRm = await Room.findOneAndUpdate({ roomID: room.roomID }, { $pull: { users: { userID: socket.id }, voiceUsers: { userID: socket.id } } }, { new: true });
                 if (updatedRm.users.length === 0) {
-                    await Room.findOneAndDelete({ _id: room._id });
+                    await Room.findOneAndDelete({ roomID: room.roomID });
                 }
             }
         }
@@ -64,7 +64,7 @@ io.on("connection", (socket) => {
     /* webRTC connections */
     socket.on("joinVoice", (roomID) => {
         async function handleVoiceConnect(roomID) {
-            let room = await Room.findOne({ _id: roomID });
+            let room = await Room.findOne({ roomID: roomID });
             let users = room.voiceUsers.filter((user) => {
                 return user.userID !== socket.id;
             })
