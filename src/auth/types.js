@@ -1,0 +1,34 @@
+
+
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+
+export const REGISTER_FAIL = 'REGISTER_FAIL';
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+
+export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
+
+
+export const RESTORE_TOKEN = 'RESTORE_TOKEN';
+export const AUTH_ERROR = 'AUTH_ERROR';
+
+export const USER_LOADING = 'USER_LOADING';
+export const USER_LOADED = 'USER_LOADED';
+
+export const CLEAR_ERROR = 'CLEAR_ERROR';
+
+export const SET_PHONE_OR_EMAIL = 'SET_PHONE_OR_EMAIL';
+
+export const PHOTOS_ADDED = 'PHOTOS_ADDED';
+// export const FRIEND_ADDED = 'FRIEND_ADDED';
+
+export const ADD_OR_REMOVE_FRIEND = 'ADD_OR_REMOVE_FRIEND';
+export const AVATAR_UPLOADED = 'AVATAR_UPLOADED';
+
+export const ROLE_ADDED = 'ROLE_ADDED';
+export const USER_PROMPT_ADDED = 'USER_PROMPT_ADDED';
+
+
+

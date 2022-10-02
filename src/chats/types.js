@@ -1,0 +1,21 @@
+
+
+export const CHATS_LOADING = 'CHATS_LOADING';
+export const CHATS_LOADED = 'CHATS_LOADED';
+
+export const TAGS_LOADED = 'TAGS_LOADED';
+export const TAGS_ERROR = 'TAGS_ERROR';
+
+export const CHATS_ERROR = 'CHATS_ERROR';
+
+export const CONTACTS_LOADED = 'CONTACTS_LOADED';
+export const CONTACTS_ERROR = 'CONTACTS_ERROR';
+
+export const FRIENDS_LOADED = 'FRIENDS_LOADED';
+export const FRIENDS_ERROR = 'FRIENDS_ERROR';
+
+export const SET_CHATS_SOCKET = 'SET_CHATS_SOCKET';
+
+export const SEND_MESSAGE = 'SEND_MESSAGE';
+
+export const CREATE_CHAT = 'CREATE_CHAT';
