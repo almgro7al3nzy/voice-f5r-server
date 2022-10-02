@@ -1,30 +1,16 @@
 {
-  "name": "chatapp",
+  "name": "ai_chatbot",
   "version": "1.0.0",
-  "description": "chatapp",
-  "main": "/server/index.js",
+  "description": "A simple AI Chatbot With Web Speech API and node.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./server/index.js ",
-    "run": ""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RicardoJardim/chatapp.git"
-  },
-  "author": "",
+  "author": "Arber Mulla",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/RicardoJardim/chatapp/issues"
-  },
-  "homepage": "https://github.com/RicardoJardim/chatapp#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.13",
-    "path": "^0.12.7",
-    "socket.io": "^4.2.0",
-    "uuid": "^8.3.2"
+    "brain.js": "^1.4.2",
+    "express": "^4.16.4",
+    "socket.io": "^2.1.1"
   }
 }
