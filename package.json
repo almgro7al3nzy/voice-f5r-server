@@ -1,15 +1,38 @@
 {
-  "name": "client",
+  "name": "startplayup",
   "version": "1.0.0",
   "description": "",
-  "main": "client.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "socket.io-client": "^3.1.1"
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "firebase-admin": "^9.11.0",
+    "getusermedia": "^2.0.1",
+    "http": "^0.0.1-security",
+    "lodash.shuffle": "^4.2.0",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-kakao": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "passport-naver": "^1.0.6",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "simple-peer": "^9.10.0",
+    "socket.io": "4.0.1",
+    "socketio": "^1.0.0",
+    "wrtc": "^0.4.7",
+    "ws": "^7.4.4"
   }
 }

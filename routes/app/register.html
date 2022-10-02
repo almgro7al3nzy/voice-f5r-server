@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <div>회원가입 페이지</div>
+        <form action="/api/user/register" method="post">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="text-center">Node JS Passport Login</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" id="nickname" name="nickname" class="form-control input-lg" placeholder="ID" required="required" autocomplete="off" />
+                        </div>
+        
+                        <div class="errorTxt"></div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" class="form-control input-lg" placeholder="Password" required="required" autocomplete="off" />
+                        </div>
+                        <div class="errorTxt"></div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-block btn-lg btn-default btn_login" value="Login" />
+                            <a href="/api/auth/login/kakao" class="btn btn-block btn-lg btn-warning btn_login">KaKao</a>
+                            <a href="/api/auth/login/naver" class="btn btn-block btn-lg btn-success btn_login">Naver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form action="/api/auth/login/local" method="post">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="text-center">naver 2</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" id="nickname" name="nickname" class="form-control input-lg" placeholder="ID" required="required" autocomplete="off" />
+                        </div>
+        
+                        <div class="errorTxt"></div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" class="form-control input-lg" placeholder="Password" required="required" autocomplete="off" />
+                        </div>
+                        <div class="errorTxt"></div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-block btn-lg btn-default btn_login" value="Login" />
+                            <a href="/api/auth/login/kakao" class="btn btn-block btn-lg btn-warning btn_login">KaKao</a>
+                            <a href="/api/auth/login/naver2" class="btn btn-block btn-lg btn-success btn_login">Naver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
