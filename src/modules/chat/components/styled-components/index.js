@@ -1,6 +1,0 @@
-export * from './ChatView'
-export * from './ChatBubble'
-export * from './ChatInput'
-export * from './ChatAvatar'
-export * from './ChatMessage'
-export * from './IncomingMessageButton'
