@@ -1,0 +1,16 @@
+.column-foodCategory {
+    min-width: 100px;
+  }
+
+.column-foodName {
+    min-width: 200px;
+  }
+
+.column-money {
+  min-width: 50px;
+}
+
+.column-total {
+    min-width: 80px;
+    background-color: #7a8aa2;
+  }

@@ -1,0 +1,19 @@
+.ant-calendar-picker-container {
+  z-index: 100;
+}
+.ant-calendar-picker-container .ant-calendar-input-wrap {
+  display: none;
+}
+
+.ant-calendar-picker-container .ant-calendar-footer-btn {
+  text-align: right;
+}
+
+.ant-calendar-selected-day .ant-calendar-date {
+  background: #26334b !important;
+}
+
+.ant-calendar-today .ant-calendar-date {
+  border-color: #26334b !important;
+  color: #666666 !important;
+}
