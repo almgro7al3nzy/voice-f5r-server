@@ -1,0 +1,12 @@
+{
+  "name": "nda_pictionary",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cookie-signature": "latest",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "ws": "^6.1.0"
+  }
+}

@@ -1,0 +1,196 @@
+:root {
+    --appbar-height: 2rem;
+    --whiteboard-aspect-ratio: calc(1/1);
+    --cameraview-aspect-ratio: calc(3/2);
+}
+
+* {
+    font-size: 105%;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.room {
+    height: 100vh;
+    display: grid;
+}
+
+.room > * {
+    overflow: hidden;
+}
+
+.room > .appbar {
+    background-color: green;
+    grid-area: appbar;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+}
+
+.room > .appbar > a {
+    min-width: 7rem;
+    max-width: 7rem;
+    height: 100%;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 0.5rem;
+    background-color: cyan;
+    text-align: center;
+}
+
+.room > .toolbox {
+    border: 1px solid gray;
+    grid-area: toolbox;
+    padding: 0.5rem;
+}
+
+.room > .toolbox > .toolbox-text-button {
+    min-width: 10rem;
+    max-width: 10rem;
+    line-height: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.room > .whiteboard {
+    grid-area: whiteboard;
+}
+
+.room > .cameraview {
+    background-color: black;
+    grid-area: cameraview;
+}
+
+.room canvas {
+    display: block;
+}
+
+.room > .chat {
+    grid-area: chat;
+    display: grid;
+    grid-template-rows: auto min-content;
+    grid-template-areas:
+        "feed"
+        "input";
+}
+
+.room > .chat > .feed {
+    border: 1px solid gray;
+    overflow: auto;
+    grid-area: feed;
+}
+
+.room > .chat > .feed > * {
+    margin: 8px 0;
+}
+
+.room > .chat > .input {
+    grid-area: input;
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-areas: "text send";
+}
+
+.room > .chat > .input > .text {
+    grid-area: text;
+}
+
+.room > .chat > .input > .send {
+    grid-area: send;
+}
+
+.room {
+    grid-template-rows:
+        var(--appbar-height)
+        calc(100vw / var(--cameraview-aspect-ratio))
+        6rem
+        calc(100vw / var(--whiteboard-aspect-ratio))
+        auto;
+    grid-template-areas:
+        "appbar"
+        "cameraview"
+        "toolbox"
+        "whiteboard"
+        "chat";
+}
+
+@media (min-aspect-ratio: 1/3) {
+    .room {
+        grid-template-rows:
+            var(--appbar-height)
+            calc(100vw * 0.50 / var(--cameraview-aspect-ratio))
+            calc(100vw / var(--whiteboard-aspect-ratio))
+            auto;
+        grid-template-columns:
+            50%
+            50%;
+        grid-template-areas:
+            "appbar appbar"
+            "toolbox cameraview"
+            "whiteboard whiteboard"
+            "chat chat";
+    }
+}
+
+@media (min-aspect-ratio: 3/5) {
+    .room {
+        grid-template-rows:
+            var(--appbar-height)
+            calc(100vw * 0.25 / var(--cameraview-aspect-ratio))
+            calc(100vw * 0.75 / var(--whiteboard-aspect-ratio) -
+                calc(100vw * 0.25 / var(--cameraview-aspect-ratio)))
+            auto;
+        grid-template-columns:
+            75%
+            25%;
+        grid-template-areas:
+            "appbar appbar"
+            "whiteboard cameraview"
+            "whiteboard toolbox"
+            "chat chat";
+    }
+}
+
+@media (min-aspect-ratio: 1/1) {
+    .room {
+        grid-template-rows:
+            var(--appbar-height)
+            calc(calc(100vw - calc(100vh - var(--appbar-height) - 18%)) /
+                var(--cameraview-aspect-ratio))
+            calc(100vh - var(--appbar-height) -
+                calc(calc(100vw - calc(100vh - var(--appbar-height) - 18%)) /
+                    var(--cameraview-aspect-ratio)) - 18%)
+            18%;
+        grid-template-columns:
+            calc(100vh - var(--appbar-height) - 18vh)
+            calc(100vw - calc(100vh - var(--appbar-height) - 18vh));
+        grid-template-areas:
+            "appbar appbar appbar appbar"
+            "whiteboard cameraview"
+            "whiteboard toolbox"
+            "chat chat chat chat";
+    }
+}
+
+@media (min-aspect-ratio: 3/2) {
+    .room {
+        grid-template-rows:
+            var(--appbar-height)
+            calc(
+                calc(100vw - calc(100vh - var(--appbar-height))) /
+                2 / var(--cameraview-aspect-ratio))
+            auto;
+        grid-template-columns:
+            calc(100vh - var(--appbar-height))
+            calc(calc(100vw - calc(100vh - var(--appbar-height))) / 2)
+            calc(calc(100vw - calc(100vh - var(--appbar-height))) / 2);
+        grid-template-areas:
+            "appbar appbar appbar"
+            "whiteboard toolbox cameraview"
+            "whiteboard chat chat";
+    }
+}
