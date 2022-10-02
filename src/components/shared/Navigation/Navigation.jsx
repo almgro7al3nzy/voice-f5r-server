@@ -56,12 +56,12 @@ const Navigation = () => {
             </button>
           </div>
         )}
-        {/* 
+        { 
         {isAuth && (
           <button onClick={logOutUser} className={styles.logOutBtn}>
             <img src="/images/logout.png" alt="logout" />
           </button>
-        )} */}
+        )} }
       </nav>
     </>
   );

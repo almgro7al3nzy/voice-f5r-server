@@ -16,7 +16,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   function startRegister() {
-    navigate("/authenticate");
+    navigate("../../components/shared/Card/Card");
   }
 
   return (
