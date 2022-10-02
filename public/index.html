@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aldair47x-Chat</title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Rochester|Sniglet" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <link rel="stylesheet" href="/stylesheets/styles.css"/>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    </head>
+    <body>
+        <div id="chat">
+            <h2>voiceChat ~</h2>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+            <input id="handle" type="text" placeholder="Handle" />
+            <input id="message" type="text" placeholder="Message" />
+
+
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-horizontal">               
+                        <button id="send">Send</button>                           
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-horizontal"> 
+                          <div class="row">
+                              <div class="col-sm-16">
+                                  <div class="form-horizontal">
+                                    <button id="speak">Press to active the microphone!</button>
+                                  </div>
+                              </div>
+                              <div class="form-horizontal">
+                                <img src="./images/mc.png" WIDTH=38 HEIGHT=38 BORDER=2 VSPACE=5 HSPACE=5 ALIGN=MIDDLE>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    </body>
+    <script src="/chat.js"></script>
+</html>
