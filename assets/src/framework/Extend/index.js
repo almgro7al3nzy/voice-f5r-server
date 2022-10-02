@@ -1,0 +1,2 @@
+require('./CCExtend');
+require('./JSExtend');

@@ -1,0 +1,53 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ACAniSmoke",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.44,
+  "sample": 25,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "27cceaf1-98ea-4a60-be81-228af214070e"
+            }
+          },
+          {
+            "frame": 0.08,
+            "value": {
+              "__uuid__": "d71940ad-5ce5-40e1-a935-2802a6510de5"
+            }
+          },
+          {
+            "frame": 0.16,
+            "value": {
+              "__uuid__": "79dd5163-1044-4715-add5-5c3e0fffb665"
+            }
+          },
+          {
+            "frame": 0.24,
+            "value": {
+              "__uuid__": "98c74761-eb99-4596-b818-64906a3c3a80"
+            }
+          },
+          {
+            "frame": 0.32,
+            "value": {
+              "__uuid__": "562f7c32-f71a-4f38-81e4-7674244d7c2a"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": null
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

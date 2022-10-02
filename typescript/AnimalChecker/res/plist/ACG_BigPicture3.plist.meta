@@ -1,0 +1,34 @@
+{
+  "ver": "1.2.4",
+  "uuid": "2a4420e7-a4ea-4b1c-8c93-310f71e3f651",
+  "rawTextureUuid": "a3fcf407-3065-48f1-af3d-6b639062a3a3",
+  "size": {
+    "width": 1024,
+    "height": 378
+  },
+  "type": "Texture Packer",
+  "subMetas": {
+    "shengjijiantou.png": {
+      "ver": "1.0.3",
+      "uuid": "cbfeb7d0-eeb7-485c-ae02-233e59b07beb",
+      "rawTextureUuid": "a3fcf407-3065-48f1-af3d-6b639062a3a3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 3,
+      "trimY": 3,
+      "width": 641,
+      "height": 372,
+      "rawWidth": 641,
+      "rawHeight": 372,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    }
+  }
+}
