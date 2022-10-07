@@ -12,26 +12,25 @@ const twilioObj = {
     cred : null 
 }
 
-// Comment if not required => below code is used to change creadentials for TURN server 
-//======================================================================================
-const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
-client.tokens.create().then(token => {
-    twilioObj.username = token.username;
-    twilioObj.cred = token.password; 
-});
-
-//every 12 hours 
-schedule.scheduleJob("*/12 * * *",()=>{
-    console.log("CRON running"); 
-    const client = require('twilio')(process.env.accountSid, process.env.authToken);
+// Voice chat uses turn server, not required locally 
+if(process.env.USE_TWILIO==="yes") { 
+    const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
     client.tokens.create().then(token => {
         twilioObj.username = token.username;
         twilioObj.cred = token.password; 
     });
-    controlRooms.deQRoom();
-})
-//========================================================================
 
+    //every 12 hours 
+    schedule.scheduleJob("*/12 * * *",()=>{
+        console.log("CRON running"); 
+        const client = require('twilio')(process.env.accountSid, process.env.authToken);
+        client.tokens.create().then(token => {
+            twilioObj.username = token.username;
+            twilioObj.cred = token.password; 
+        });
+        controlRooms.deQRoom();
+    })
+}
 
 const cors = require('cors');
 const app = express(); 
@@ -102,7 +101,6 @@ io.on('connection', socket => {
             removeUserInVoice(user.id); 
             socket.broadcast.to(user.room).emit('remove-from-voice',{id:socket.id,name:user.name}); 
         }
-        //console.log("User left"); 
     });
     
 
